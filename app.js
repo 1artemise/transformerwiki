@@ -258,7 +258,7 @@ function isTableLine(line) {
 }
 
 function resolveLink(href, doc = null) {
-  if (/^https?:\/\//.test(href)) return href;
+  if (/^https?:\/\//i.test(href)) return normalizeExternalUrl(href);
   const clean = decodeURIComponent(href).split("#")[0];
   const candidate = doc ? resolveRelativePath(doc.path, clean) : clean;
   const targetDoc = byPath.get(normalizePath(candidate)) || byPath.get(normalizePath(clean));
@@ -282,7 +282,8 @@ function resolveWikiDoc(target) {
 
 function resolveAssetPath(src, doc = null) {
   const clean = decodeURIComponent(src).split("#")[0];
-  if (/^https?:\/\//.test(clean) || clean.startsWith("data:")) return clean;
+  if (/^https?:\/\//i.test(clean)) return normalizeExternalUrl(clean);
+  if (clean.startsWith("data:")) return clean;
 
   if (normalizePath(clean).startsWith("图/")) {
     return contentRoot + encodeURI(normalizePath(clean));
@@ -292,6 +293,10 @@ function resolveAssetPath(src, doc = null) {
   if (path.startsWith("图/")) return contentRoot + encodeURI(path);
   if (path.includes("/图/")) return contentRoot + encodeURI(path.slice(path.indexOf("图/")));
   return contentRoot + encodeURI(path);
+}
+
+function normalizeExternalUrl(url) {
+  return url.replace(/^http:\/\//i, "https://");
 }
 
 function resolveRelativePath(fromPath, relative) {
