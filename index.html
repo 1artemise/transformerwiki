@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="从前置知识开始学习 Transformer 的简约 Wiki。">
+  <title>Transformer 学习 Wiki</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <aside class="left-panel" aria-label="文档导航">
+      <a class="brand" href="#/home">
+        <span class="brand-mark">T</span>
+        <span>
+          <strong>Transformer Wiki</strong>
+          <small>先直觉，再架构</small>
+        </span>
+      </a>
+      <label class="search-box">
+        <span>搜索笔记</span>
+        <input id="search" type="search" placeholder="softmax / LayerNorm / QKV">
+      </label>
+      <nav class="doc-nav" id="docNav"></nav>
+    </aside>
+
+    <main class="content-panel">
+      <article class="article" id="article">
+        <p class="loading">正在加载笔记...</p>
+      </article>
+    </main>
+
+    <aside class="right-panel" aria-label="当前页目录">
+      <div class="toc-card">
+        <p class="toc-title">本页目录</p>
+        <nav id="toc"></nav>
+      </div>
+    </aside>
+  </div>
+
+  <script src="./manifest.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
