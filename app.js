@@ -60,13 +60,13 @@ function setActiveNav(id) {
 function renderHome() {
   return `
     <p class="home-kicker">Transformer learning wiki</p>
-    <h1>先建立直觉，再补前置，最后读架构。</h1>
-    <p>大多数 Transformer 教程你是看不懂的，不是因为你笨，而是因为它默认你已经知道很多前置知识。softmax、词嵌入、LayerNorm、残差连接、前馈网络、mask、QKV，这些东西如果单独都不熟，再被一张架构图串起来，人很容易被绕晕。</p>
-    <p>这份站点按一个更稳的顺序组织：先用b站上的“ 3Blue1Brown” 和“飞天闪客”的视频建立直觉，不追求一步到位推完公式；然后补 softmax 的实现、LayerNorm 的思想、神经网络和前馈网络这些地基；最后再回到 <em>Attention Is All You Need</em>，把编码器、解码器、注意力和训练目标连起来。</p>
-    <blockquote><strong>共同维护声明：</strong>这个 wiki 不是单人文档，而是持续迭代的共建知识库。欢迎通过 GitHub 的 Issue / Pull Request 提交勘误、补充和工程实践记录；我们优先合并“可复现、可验证、能帮助学习路径更清晰”的内容。</blockquote>
+    <h1>先建立直觉，再补前置，最后读架构和论文</h1>
+    <p>大多数 Transformer 教程你是看不懂的，因为它默认你已经知道很多前置知识。softmax、词嵌入、LayerNorm、残差连接、前馈网络、mask、QKV，这些东西如果单独都不熟，再被一张架构图串起来，人很容易被绕晕。作者艰难曲折学习后得出了这个学习经验（一家之言）</p>
+    <p>这份站点是作者自己的学习笔记整理，推荐学习路线：先用b站上的 “<a href="https://www.bilibili.com/video/BV13z421U7cs?spm_id_from=333.788.recommend_more_video.2&trackid=web_related_0.router-related-2479604-s7xkd.1778464404440.361&vd_source=6f3b9bab813c14ca00fbb56363a43d7e" target="_blank" rel="noopener noreferrer">3Blue1Brown</a>” 和 “<a href="https://www.bilibili.com/video/BV1NCgVzoEG9/?spm_id_from=333.337.search-card.all.click&vd_source=6f3b9bab813c14ca00fbb56363a43d7e" target="_blank" rel="noopener noreferrer">飞天闪客</a>” 的视频建立直觉，不追求一步到位推完公式；然后补 softmax 的实现、LayerNorm 的思想、神经网络和前馈网络这些地基；最后再回到 <em>Attention Is All You Need</em>，把编码器、解码器、注意力和训练目标连起来。</p>
+    <blockquote><strong>共同维护声明：</strong>这个 wiki 想建成持续迭代的共建知识库。欢迎通过 GitHub 的 Issue / Pull Request 提交勘误和补充；作者后续也会更新</blockquote>
     <p>协作入口：<a href="https://github.com/1artemise/transformerwiki" target="_blank" rel="noopener noreferrer">github.com/1artemise/transformerwiki</a></p>
     <div class="home-links">
-      <a class="home-card" href="#/neural-network"><strong>1. 前置地基</strong><span>神经网络、FNN、损失函数、梯度问题。</span></a>
+      <a class="home-card" href="#/neural-network"><strong>1. 前置知识</strong><span>神经网络、FNN、损失函数、梯度问题。</span></a>
       <a class="home-card" href="#/softmax"><strong>2. Transformer 小积木</strong><span>softmax、词嵌入、LayerNorm、Add。</span></a>
       <a class="home-card" href="#/attention"><strong>3. 注意力机制</strong><span>QKV、缩放点积注意力、多头注意力、mask。</span></a>
       <a class="home-card" href="#/Transformer"><strong>4. 回到整体架构</strong><span>编码器、解码器、位置编码、最终输出。</span></a>
