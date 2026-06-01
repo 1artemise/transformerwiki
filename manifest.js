@@ -3,7 +3,10 @@ window.TRANSFORMER_DOCS = [
     title: "开始",
     items: [
       { id: "home", title: "首页", home: true },
+      { id: "toc", title: "知识库目录", path: "目录.md" },
       { id: "Transformer", title: "Transformer 总览", path: "Transformer.md" },
+      { id: "training-inference", title: "训练与推理", path: "训练与推理.md" },
+      { id: "common-sticking-points", title: "常见卡点", path: "常见卡点.md" },
       { id: "code", title: "代码实现", path: "代码实现.md" }
     ]
   },
@@ -15,6 +18,7 @@ window.TRANSFORMER_DOCS = [
       { id: "embedding", title: "词嵌入", path: "前置知识/词嵌入.md" },
       { id: "softmax", title: "softmax", path: "前置知识/softmax.md" },
       { id: "loss", title: "损失函数", path: "前置知识/损失函数.md" },
+      { id: "gradient-backprop", title: "梯度与反向传播", path: "前置知识/梯度与反向传播.md" },
       { id: "activation", title: "激活函数", path: "前置知识/激活函数.md" },
       { id: "vanishing-gradient", title: "梯度消失", path: "前置知识/梯度消失.md" },
       { id: "exploding-gradient", title: "梯度爆炸", path: "前置知识/梯度爆炸.md" },
