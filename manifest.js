@@ -48,11 +48,25 @@ window.TRANSFORMER_DOCS = [
     ]
   },
   {
+    title: "手搓 Transformer",
+    items: [
+      { id: "build-transformer-overview", title: "手搓总览", path: "手搓Transformer/手搓Transformer总览.md" },
+      { id: "build-attention", title: "手搓 Attention", path: "手搓Transformer/手搓Attention.md" },
+      { id: "build-tiny-transformer", title: "手搓最小 Transformer", path: "手搓Transformer/手搓最小Transformer.md" }
+    ]
+  },
+  {
     title: "推理与现代 LLM",
     items: [
       { id: "decoding-strategies", title: "解码策略", path: "推理/解码策略.md" },
       { id: "kv-cache", title: "KV Cache", path: "推理/KV Cache.md" },
       { id: "modern-transformer-variants", title: "现代 Transformer 变体", path: "现代变体/现代Transformer变体.md" }
+    ]
+  },
+  {
+    title: "面试",
+    items: [
+      { id: "transformer-interview", title: "Transformer 面试题", path: "面试/Transformer面试题.md" }
     ]
   }
 ];

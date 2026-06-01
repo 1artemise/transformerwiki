@@ -141,6 +141,7 @@ V：每个词真正携带的信息
 
 - [[训练实验/最小训练实验|最小训练实验]]
 - [[训练实验/训练排错清单|训练排错清单]]
+- [[手搓Transformer/手搓Transformer总览|手搓 Transformer 总览]]
 - [[推理/解码策略|解码策略]]
 - [[推理/KV Cache|KV Cache]]
 - [[现代变体/现代Transformer变体|现代 Transformer 变体]]
@@ -226,3 +227,5 @@ D:/obsdian/note/AI/transformer/图/xxx.png
 代码部分看：[[代码实现]]
 
 论文精读看：[[论文精读/Attention Is All You Need|Attention Is All You Need 精读]]
+
+面试复习看：[[面试/Transformer面试题|Transformer 面试题]]
