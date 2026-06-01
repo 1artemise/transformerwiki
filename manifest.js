@@ -7,7 +7,8 @@ window.TRANSFORMER_DOCS = [
       { id: "Transformer", title: "Transformer 总览", path: "Transformer.md" },
       { id: "training-inference", title: "训练与推理", path: "训练与推理.md" },
       { id: "common-sticking-points", title: "常见卡点", path: "常见卡点.md" },
-      { id: "code", title: "代码实现", path: "代码实现.md" }
+      { id: "code", title: "代码实现", path: "代码实现.md" },
+      { id: "paper-attention-is-all-you-need", title: "论文精读", path: "论文精读/Attention Is All You Need.md" }
     ]
   },
   {
@@ -34,8 +35,24 @@ window.TRANSFORMER_DOCS = [
     title: "关键模块",
     items: [
       { id: "attention", title: "注意力机制", path: "关键模块/注意力机制.md" },
+      { id: "tensor-shapes", title: "张量维度流", path: "关键模块/张量维度流.md" },
       { id: "position", title: "位置编码", path: "关键模块/位置编码.md" },
       { id: "encoder-decoder", title: "编码器与解码器", path: "关键模块/编码器与解码器.md" }
+    ]
+  },
+  {
+    title: "训练实验",
+    items: [
+      { id: "minimal-training", title: "最小训练实验", path: "训练实验/最小训练实验.md" },
+      { id: "training-debug-checklist", title: "训练排错清单", path: "训练实验/训练排错清单.md" }
+    ]
+  },
+  {
+    title: "推理与现代 LLM",
+    items: [
+      { id: "decoding-strategies", title: "解码策略", path: "推理/解码策略.md" },
+      { id: "kv-cache", title: "KV Cache", path: "推理/KV Cache.md" },
+      { id: "modern-transformer-variants", title: "现代 Transformer 变体", path: "现代变体/现代Transformer变体.md" }
     ]
   }
 ];

@@ -95,6 +95,8 @@ K：每个词能提供什么线索
 V：每个词真正携带的信息
 ```
 对应笔记：[注意力机制](关键模块/注意力机制.md)
+
+如果你开始写代码，建议紧接着看：[[关键模块/张量维度流|张量维度流]]。很多 attention bug 本质不是公式问题，而是 `[batch, heads, seq_len, head_dim]` 这些维度没走顺。
 ### 3. 为什么要多头
 一句话里的关系不止一种，一个注意力头可能关注“动作和对象”：
 ```text
@@ -134,6 +136,14 @@ V：每个词真正携带的信息
 对应笔记：[[训练与推理]]
 
 如果你学到这里开始想一些更底层的问题，比如“权重什么时候不变”“loss 不降到底说明什么”“Attention 权重是不是人工设定的”，可以看：[[常见卡点]]
+
+如果你想进一步靠近工程实践，可以继续看：
+
+- [[训练实验/最小训练实验|最小训练实验]]
+- [[训练实验/训练排错清单|训练排错清单]]
+- [[推理/解码策略|解码策略]]
+- [[推理/KV Cache|KV Cache]]
+- [[现代变体/现代Transformer变体|现代 Transformer 变体]]
 
 ## 一层 Transformer 在做什么
 
@@ -214,3 +224,5 @@ D:/obsdian/note/AI/transformer/图/xxx.png
 - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
 
 代码部分看：[[代码实现]]
+
+论文精读看：[[论文精读/Attention Is All You Need|Attention Is All You Need 精读]]
